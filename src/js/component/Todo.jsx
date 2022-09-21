@@ -5,7 +5,7 @@ const Todo = () => {
   const [inputValue, setInputValue] = useState("");
 
   const handleKeypress = (e) => {
-    if (e.keyCode === 13) {
+    if (e.keyCode === 13 && inputValue !== "") {
       setTodos([...todos, inputValue]);
       setInputValue("");
     }
