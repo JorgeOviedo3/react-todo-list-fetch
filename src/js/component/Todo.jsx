@@ -50,8 +50,18 @@ const Todo = () => {
           );
         })}
 
-        <p>{todos.length} items left</p>
+        {todos.length === 0 ? (
+          <div className="task notasks">No tasks, add a task</div>
+        ) : (
+          <></>
+        )}
+
+        <p>
+          {todos.length} {todos.length === 1 ? "todo" : "todos"} left
+        </p>
       </div>
+      <div className="palito1"></div>
+      <div className="palito2"></div>
     </div>
   );
 };

@@ -9,8 +9,9 @@ body {
   color: #5a76d3;
   text-align: center;
   font-size: 100px;
-  box-shadow: 0px 0px 15px 5px grey;
-  padding: 25px;
+  box-shadow: 0px 0px 15px 5px #5a76d3;
+  padding: 10px;
+  background: #ffffff;
 }
 
 #main {
@@ -19,9 +20,11 @@ body {
   padding: 0;
   box-shadow: 0px 0px 5px 1px grey;
   margin-top: 30px;
+  border-radius: 15px;
 }
 
 input {
+  border-radius: 15px;
   padding: 30px;
   padding-left: 50px;
   width: 100%;
@@ -32,7 +35,7 @@ input {
   border-left-style: hidden;
   border-bottom-style: hidden;
 }
-*:focus {
+input:focus {
   outline: none;
 }
 
@@ -54,13 +57,38 @@ p {
   font-size: 15px;
   padding: 15px;
   color: grey;
+  margin-bottom: 0px;
 }
 
 span {
   color: #5a76d3;
+  display: none;
 }
 
 span:hover {
   transform: scale(1.2);
   cursor: pointer;
+}
+
+.task:hover span {
+  display: inline;
+}
+
+.notasks {
+  color: #5a76d3;
+}
+
+.palito1,
+.palito2 {
+  margin: auto;
+  height: 5px;
+  max-width: 780px;
+  background: #5a76d3;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 1px grey;
+}
+
+.palito2 {
+  background: #8ea6f6;
+  max-width: 770px;
 }
