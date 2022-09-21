@@ -1,12 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 
-/* 
+body {
+  background: #eeeeee;
+  font-family: "Raleway";
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.header {
+  color: #5a76d3;
+  text-align: center;
+  font-size: 100px;
+  box-shadow: 0px 0px 15px 5px grey;
+  padding: 25px;
+}
 
-*/
+#main {
+  background: #ffffff;
+  max-width: 800px;
+  padding: 0;
+  box-shadow: 0px 0px 5px 1px grey;
+  margin-top: 30px;
+}
+
+input {
+  padding: 30px;
+  padding-left: 50px;
+  width: 100%;
+  font-size: 50px;
+  line-height: 50px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+*:focus {
+  outline: none;
+}
+
+.task {
+  font-size: 50px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  padding: 30px;
+  padding-left: 50px;
+}
+
+hr {
+  width: 100%;
+  margin: 0;
+}
+
+p {
+  font-size: 15px;
+  padding: 15px;
+  color: grey;
+}
+
+span {
+  color: #5a76d3;
+}
+
+span:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
