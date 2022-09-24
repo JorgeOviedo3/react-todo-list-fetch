@@ -8,43 +8,41 @@ body {
 .header {
   color: #5a76d3;
   text-align: center;
-  font-size: 100px;
-  box-shadow: 0px 0px 15px 5px #5a76d3;
+  font-size: 90px;
   padding: 10px;
-  background: #ffffff;
 }
 
 #main {
   background: #ffffff;
-  max-width: 800px;
+  max-width: 500px;
   padding: 0;
-  box-shadow: 0px 0px 5px 1px grey;
+  box-shadow: 1px 5px 5px 1px grey;
   margin-top: 30px;
   border-radius: 15px;
 }
 
-input {
+#todoinput {
   border-radius: 15px;
   padding: 30px;
   padding-left: 50px;
   width: 100%;
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 30px;
+  line-height: 30px;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: hidden;
 }
-input:focus {
+#todoinput:focus {
   outline: none;
 }
 
 .task {
-  font-size: 50px;
+  font-size: 30px;
   display: flex;
   justify-content: space-between;
   line-height: 50px;
-  padding: 30px;
+  padding: 20px;
   padding-left: 50px;
 }
 
@@ -53,42 +51,27 @@ hr {
   margin: 0;
 }
 
-p {
+.bottom-text {
   font-size: 15px;
   padding: 15px;
   color: grey;
   margin-bottom: 0px;
 }
 
-span {
+.delete-btn {
   color: #5a76d3;
   display: none;
 }
 
-span:hover {
+.delete-btn:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
 
-.task:hover span {
+.task:hover .delete-btn {
   display: inline;
 }
 
 .notasks {
   color: #5a76d3;
-}
-
-.palito1,
-.palito2 {
-  margin: auto;
-  height: 5px;
-  max-width: 780px;
-  background: #5a76d3;
-  border-radius: 15px;
-  box-shadow: 0px 0px 5px 1px grey;
-}
-
-.palito2 {
-  background: #8ea6f6;
-  max-width: 770px;
 }

@@ -24,6 +24,7 @@ const Todo = () => {
       <h1 className="header">Todos App</h1>
       <div className="container" id="main">
         <input
+          id="todoinput"
           type="text"
           onChange={(e) => setInputValue(e.target.value)}
           onKeyDown={handleKeypress}
@@ -38,6 +39,7 @@ const Todo = () => {
               <div className="task">
                 {todo}
                 <span
+                  className="delete-btn"
                   onClick={() => {
                     handleDelete(id);
                   }}
@@ -50,18 +52,12 @@ const Todo = () => {
           );
         })}
 
-        {todos.length === 0 ? (
-          <div className="task notasks">No tasks, add a task</div>
-        ) : (
-          <></>
-        )}
+        {todos.length === 0 ? <div className="task notasks">No tasks, add a task</div> : <></>}
 
-        <p>
+        <p className="bottom-text">
           {todos.length} {todos.length === 1 ? "todo" : "todos"} left
         </p>
       </div>
-      <div className="palito1"></div>
-      <div className="palito2"></div>
     </div>
   );
 };
