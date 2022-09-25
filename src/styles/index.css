@@ -6,10 +6,13 @@ body {
 }
 
 .header {
-  color: #5a76d3;
   text-align: center;
-  font-size: 90px;
-  padding: 10px;
+  font-size: 70px;
+  color: #6656bc;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-shadow: 0px 0px 0 rgb(92, 76, 178), 1px 1px 0 rgb(82, 66, 168), 2px 2px 0 rgb(71, 55, 157),
+    3px 3px 0 rgb(61, 45, 147), 4px 4px 0 rgb(51, 35, 137), 5px 5px 0 rgb(41, 25, 127),
+    6px 6px 5px rgba(0, 0, 0, 0.78), 6px 6px 1px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 #main {
@@ -51,27 +54,40 @@ hr {
   margin: 0;
 }
 
-.bottom-text {
-  font-size: 15px;
-  padding: 15px;
-  color: grey;
-  margin-bottom: 0px;
-}
-
 .delete-btn {
-  color: #5a76d3;
+  color: #6656bc;
   display: none;
+  font-weight: 600;
 }
 
 .delete-btn:hover {
   transform: scale(1.2);
   cursor: pointer;
+  color: rgb(41, 25, 127);
 }
 
 .task:hover .delete-btn {
   display: inline;
 }
 
-.notasks {
-  color: #5a76d3;
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: grey;
+}
+
+.bottom-text {
+  color: grey;
+  margin-bottom: 0px;
+}
+
+.btn-danger {
+  background-color: #6656bc;
+  border: 0;
+}
+.btn-danger:hover {
+  transform: scale(1.1);
+  background-color: rgb(41, 25, 127);
 }
